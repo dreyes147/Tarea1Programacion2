@@ -22,110 +22,158 @@ Partial Class Juego
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Juego))
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblPuntaje1 = New System.Windows.Forms.Label()
+        Me.lblPuntos2 = New System.Windows.Forms.Label()
+        Me.lblPuntos1 = New System.Windows.Forms.Label()
+        Me.lblPuntaje2 = New System.Windows.Forms.Label()
+        Me.ptbDados = New System.Windows.Forms.PictureBox()
+        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.btnAcomular = New System.Windows.Forms.Button()
+        Me.btnLanzar = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Panel1.SuspendLayout()
+        CType(Me.ptbDados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'Panel1
         '
-        Me.Button1.Location = New System.Drawing.Point(40, 250)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(96, 50)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Panel1.BackgroundImage = Global.Juego.My.Resources.Resources.roll_dice_gambling_casino_560x224
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.lblPuntaje1)
+        Me.Panel1.Controls.Add(Me.lblPuntos2)
+        Me.Panel1.Controls.Add(Me.lblPuntos1)
+        Me.Panel1.Controls.Add(Me.lblPuntaje2)
+        Me.Panel1.Location = New System.Drawing.Point(0, 1)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(578, 90)
+        Me.Panel1.TabIndex = 11
         '
-        'Button2
+        'lblPuntaje1
         '
-        Me.Button2.Location = New System.Drawing.Point(204, 129)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(96, 50)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.lblPuntaje1.AutoSize = True
+        Me.lblPuntaje1.BackColor = System.Drawing.Color.Transparent
+        Me.lblPuntaje1.Font = New System.Drawing.Font("Rockwell", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPuntaje1.ForeColor = System.Drawing.Color.White
+        Me.lblPuntaje1.Location = New System.Drawing.Point(12, 18)
+        Me.lblPuntaje1.Name = "lblPuntaje1"
+        Me.lblPuntaje1.Size = New System.Drawing.Size(90, 26)
+        Me.lblPuntaje1.TabIndex = 7
+        Me.lblPuntaje1.Text = "Puntaje"
         '
-        'Button3
+        'lblPuntos2
         '
-        Me.Button3.Location = New System.Drawing.Point(370, 277)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(96, 50)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.lblPuntos2.AutoSize = True
+        Me.lblPuntos2.BackColor = System.Drawing.Color.Transparent
+        Me.lblPuntos2.Font = New System.Drawing.Font("Rockwell", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblPuntos2.ForeColor = System.Drawing.Color.White
+        Me.lblPuntos2.Location = New System.Drawing.Point(498, 18)
+        Me.lblPuntos2.Name = "lblPuntos2"
+        Me.lblPuntos2.Size = New System.Drawing.Size(34, 26)
+        Me.lblPuntos2.TabIndex = 10
+        Me.lblPuntos2.Text = "00"
         '
-        'TextBox1
+        'lblPuntos1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(53, 49)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(83, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.lblPuntos1.AutoSize = True
+        Me.lblPuntos1.BackColor = System.Drawing.Color.Transparent
+        Me.lblPuntos1.Font = New System.Drawing.Font("Rockwell", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblPuntos1.ForeColor = System.Drawing.Color.White
+        Me.lblPuntos1.Location = New System.Drawing.Point(96, 18)
+        Me.lblPuntos1.Name = "lblPuntos1"
+        Me.lblPuntos1.Size = New System.Drawing.Size(34, 26)
+        Me.lblPuntos1.TabIndex = 9
+        Me.lblPuntos1.Text = "00"
         '
-        'TextBox3
+        'lblPuntaje2
         '
-        Me.TextBox3.Location = New System.Drawing.Point(478, 49)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(83, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.lblPuntaje2.AutoSize = True
+        Me.lblPuntaje2.BackColor = System.Drawing.Color.Transparent
+        Me.lblPuntaje2.Font = New System.Drawing.Font("Rockwell", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblPuntaje2.ForeColor = System.Drawing.Color.White
+        Me.lblPuntaje2.Location = New System.Drawing.Point(410, 18)
+        Me.lblPuntaje2.Name = "lblPuntaje2"
+        Me.lblPuntaje2.Size = New System.Drawing.Size(90, 26)
+        Me.lblPuntaje2.TabIndex = 8
+        Me.lblPuntaje2.Text = "Puntaje"
         '
-        'PictureBox1
+        'ptbDados
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(221, 209)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(78, 64)
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
+        Me.ptbDados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ptbDados.Image = Global.Juego.My.Resources.Resources._1
+        Me.ptbDados.Location = New System.Drawing.Point(257, 153)
+        Me.ptbDados.Name = "ptbDados"
+        Me.ptbDados.Size = New System.Drawing.Size(90, 90)
+        Me.ptbDados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.ptbDados.TabIndex = 6
+        Me.ptbDados.TabStop = False
         '
-        'Label1
+        'btnSalir
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(11, 56)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Label1"
+        Me.btnSalir.BackColor = System.Drawing.Color.Transparent
+        Me.btnSalir.BackgroundImage = Global.Juego.My.Resources.Resources.liberar_icono_7141_64
+        Me.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnSalir.Location = New System.Drawing.Point(466, 214)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(90, 90)
+        Me.btnSalir.TabIndex = 2
+        Me.ToolTip1.SetToolTip(Me.btnSalir, "Salir")
+        Me.btnSalir.UseVisualStyleBackColor = False
         '
-        'Label2
+        'btnAcomular
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(427, 49)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Label2"
+        Me.btnAcomular.BackgroundImage = Global.Juego.My.Resources.Resources.flechas_cambiar_icono_6893_48
+        Me.btnAcomular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAcomular.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnAcomular.Location = New System.Drawing.Point(41, 234)
+        Me.btnAcomular.Name = "btnAcomular"
+        Me.btnAcomular.Size = New System.Drawing.Size(60, 50)
+        Me.btnAcomular.TabIndex = 1
+        Me.ToolTip1.SetToolTip(Me.btnAcomular, "Plantarse")
+        Me.btnAcomular.UseVisualStyleBackColor = True
+        '
+        'btnLanzar
+        '
+        Me.btnLanzar.BackColor = System.Drawing.Color.Transparent
+        Me.btnLanzar.BackgroundImage = Global.Juego.My.Resources.Resources.siguiente_icono_5491_64
+        Me.btnLanzar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnLanzar.Location = New System.Drawing.Point(26, 126)
+        Me.btnLanzar.Name = "btnLanzar"
+        Me.btnLanzar.Size = New System.Drawing.Size(90, 90)
+        Me.btnLanzar.TabIndex = 0
+        Me.ToolTip1.SetToolTip(Me.btnLanzar, "Tirar")
+        Me.btnLanzar.UseVisualStyleBackColor = False
         '
         'Juego
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(607, 492)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(578, 336)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.ptbDados)
+        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.btnAcomular)
+        Me.Controls.Add(Me.btnLanzar)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Juego"
-        Me.Text = "Inicio"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Juego"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.ptbDados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents btnLanzar As System.Windows.Forms.Button
+    Friend WithEvents btnAcomular As System.Windows.Forms.Button
+    Friend WithEvents btnSalir As System.Windows.Forms.Button
+    Friend WithEvents ptbDados As System.Windows.Forms.PictureBox
+    Friend WithEvents lblPuntaje1 As System.Windows.Forms.Label
+    Friend WithEvents lblPuntaje2 As System.Windows.Forms.Label
+    Friend WithEvents lblPuntos1 As System.Windows.Forms.Label
+    Friend WithEvents lblPuntos2 As System.Windows.Forms.Label
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

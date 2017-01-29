@@ -125,6 +125,51 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flechas-cambiar-icono-6893-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-la-reproduccion-de-medios-icono-7675-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liberar-icono-7141-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liberar-icono-7141-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liberar-icono-7141-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siguiente-icono-5491-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo de pantalla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zufall_aus_der_maschine%401x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roll-dice-gambling-casino-560x224.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
