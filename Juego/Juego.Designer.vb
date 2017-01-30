@@ -187,6 +187,7 @@ Partial Class Juego
         Me.Controls.Add(Me.btnLanzarUno)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Juego"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Juego"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

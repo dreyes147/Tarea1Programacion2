@@ -25,9 +25,15 @@
     ''' </summary>
     ''' <remarks>David Reyes Sánchez</remarks>
     Private Sub Inicializar()
-        If vModo = "C" Then
-            btnLanzarDos.Visible = False
-        End If
+        Try
+            If vModo = "C" Then
+                btnLanzarDos.Visible = False
+            Else
+                btnLanzarDos.Enabled = False
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error en el sistema" & vbCrLf & ex.ToString, "Error del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 
     ''' <summary>
@@ -142,7 +148,7 @@
     Private Sub Plantarse(ByVal pjugador As Integer)
         If pjugador = 1 Then
             lblPuntos1.Text = CStr(CInt(lblPuntos1.Text) + CInt(lblPuntajeTurno.Text))
-            If lblPuntos1.Text > 100 Then
+            If lblPuntos1.Text >= 100 Then
                 Felicitaciones.Texto = "El jugador 1 ha ganado"
                 Felicitaciones.Modo = "F"
                 Felicitaciones.Show()
@@ -150,12 +156,12 @@
             End If
         Else
             lblPuntos2.Text = CStr(CInt(lblPuntos2.Text) + CInt(lblPuntajeTurno.Text))
-            If lblPuntos2.Text > 100 And vModo = "C" Then
+            If lblPuntos2.Text >= 100 And vModo = "C" Then
                 Felicitaciones.Texto = ""
                 Felicitaciones.Modo = "P"
                 Felicitaciones.Show()
                 Me.Close()
-            ElseIf lblPuntos2.Text > 100 And vModo = "M" Then
+            ElseIf lblPuntos2.Text >= 100 And vModo = "M" Then
                 Felicitaciones.Texto = "El jugador 2 ha ganado"
                 Felicitaciones.Modo = "F"
                 Felicitaciones.Show()
@@ -299,28 +305,19 @@
     End Sub
 
     ''' <summary>
-    ''' Cierra la pantalla
-    ''' </summary>
-    ''' <param name="sender"></param>
-    ''' <param name="e"></param>
-    ''' <remarks>David Reyes Sánchez</remarks>
-    Private Sub lnkSalir_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
-        Inicio.Show()
-        Me.Close()
-    End Sub
-
-    ''' <summary>
     ''' Sale de la aplicación
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     ''' <remarksDavid Reyes Sánchez></remarks>
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-        Inicio.Show()
-        Me.Close()
+        Try
+            Inicio.Show()
+            Me.Close()
+        Catch ex As Exception
+            MessageBox.Show("Error en el sistema" & vbCrLf & ex.ToString, "Error del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 #End Region
 
-    
-   
 End Class

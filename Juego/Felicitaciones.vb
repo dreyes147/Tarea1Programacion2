@@ -23,19 +23,41 @@
     End Property
 #End Region
 
+#Region "Eventos"
 
-
-    Private Sub Felicitaciones_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
-        Inicio.Show()
-        Me.Close()
+    ''' <summary>
+    ''' Cierea la pantalla
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks>David Reyes Sánchez</remarks>
+    Private Sub Felicitaciones_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Try
+            Inicio.Show()
+            Me.Finalize()
+        Catch ex As Exception
+            MessageBox.Show("Error en el sistema" & vbCrLf & ex.ToString, "Error del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 
+    ''' <summary>
+    ''' Inicializa la pantalla
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks>David Reyes Sánchez</remarks>
     Private Sub Felicitaciones_Load(sender As Object, e As EventArgs) Handles Me.Load
-        lblTexto.Text = vTexto
-        If vModo = "F" Then
-            Panel1.BackgroundImage = Global.Juego.My.Resources.felicidades
-        Else
-            Panel1.BackgroundImage = Global.Juego.My.Resources.lacasa_gana
-        End If
+        Try
+            lblTexto.Text = vTexto
+            If vModo = "F" Then
+                Panel1.BackgroundImage = Global.Juego.My.Resources.felicidades
+            Else
+                Panel1.BackgroundImage = Global.Juego.My.Resources.lacasa_gana
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error en el sistema" & vbCrLf & ex.ToString, "Error del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
+
+#End Region
 End Class

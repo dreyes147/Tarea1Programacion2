@@ -99,6 +99,7 @@ Partial Class Inicio
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Inicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Meú Principal"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
