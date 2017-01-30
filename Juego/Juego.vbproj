@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Felicitaciones.Designer.vb">
+      <DependentUpon>Felicitaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Felicitaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Juego.Designer.vb">
       <DependentUpon>Juego.vb</DependentUpon>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Felicitaciones.resx">
+      <DependentUpon>Felicitaciones.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Juego.resx">
       <DependentUpon>Juego.vb</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +178,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de inicio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-borrar-la-salida-icono-8537-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\felicidades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lacasa gana.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

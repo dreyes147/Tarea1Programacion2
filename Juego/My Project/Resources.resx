@@ -118,52 +118,64 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="liberar-icono-7141-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\liberar-icono-7141-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="siguiente-icono-5491-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\siguiente-icono-5491-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondo de pantalla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo de pantalla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iniciar-la-reproduccion-de-medios-icono-7675-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iniciar-la-reproduccion-de-medios-icono-7675-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="flechas-cambiar-icono-6893-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flechas-cambiar-icono-6893-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="zufall_aus_der_maschine@1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zufall_aus_der_maschine@1x.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Iniciar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Iniciar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="liberar-icono-7141-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\liberar-icono-7141-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="roll-dice-gambling-casino-560x224" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\roll-dice-gambling-casino-560x224.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="liberar-icono-7141-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\liberar-icono-7141-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iniciar-la-reproduccion-de-medios-icono-7675-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iniciar-la-reproduccion-de-medios-icono-7675-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="liberar-icono-7141-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\liberar-icono-7141-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="liberar-icono-7141-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\liberar-icono-7141-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zufall_aus_der_maschine@1x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zufall_aus_der_maschine@1x.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Imagen de inicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagen de inicio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo de pantalla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo de pantalla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="liberar-icono-7141-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\liberar-icono-7141-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Iniciar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iniciar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flechas-cambiar-icono-6893-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flechas-cambiar-icono-6893-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cerrar-borrar-la-salida-icono-8537-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerrar-borrar-la-salida-icono-8537-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="roll-dice-gambling-casino-560x224" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roll-dice-gambling-casino-560x224.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="felicidades" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\felicidades.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="siguiente-icono-5491-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\siguiente-icono-5491-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lacasa gana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lacasa gana.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
