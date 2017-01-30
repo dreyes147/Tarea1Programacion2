@@ -101,7 +101,7 @@
                     ptbDados.Image = Global.Juego.My.Resources._6
                     Application.DoEvents()
             End Select
-            lblPuntajeTurno.Text = CInt(lblPuntajeTurno.Text) + pNumero
+            lblPuntajeTurno.Text = CStr(CInt(lblPuntajeTurno.Text) + pNumero)
         Catch ex As Exception
             MessageBox.Show("Error en el sistema" & vbCrLf & ex.ToString, "Error del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
