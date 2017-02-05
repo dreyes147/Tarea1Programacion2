@@ -108,6 +108,7 @@
                     Application.DoEvents()
             End Select
             lblPuntajeTurno.Text = CStr(CInt(lblPuntajeTurno.Text) + pNumero)
+            Application.DoEvents()
         Catch ex As Exception
             MessageBox.Show("Error en el sistema" & vbCrLf & ex.ToString, "Error del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
@@ -125,11 +126,13 @@
             For i = 1 To vContador
                 vNumeroComputadora = vRandom.Next(1, 6)
                 If vNumeroComputadora = 1 Then
+                    System.Threading.Thread.Sleep(5000)
                     MessageBox.Show("Perdí mi turno", "Notificación", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     lblPuntajeTurno.Text = "00"
                     Exit Sub
                 Else
                     CambiarDado(vNumeroComputadora)
+
                     System.Threading.Thread.Sleep(5000)
                 End If
             Next
